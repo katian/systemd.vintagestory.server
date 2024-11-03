@@ -1,0 +1,13 @@
+[Unit]
+ Description=Unite Serveur Vintage Story
+ After=network.target
+ 
+ [Service]
+ WorkingDirectory=/home/katian/vs_server_linux
+ ExecStart=/home/katian/vs_server_linux/VintagestoryServer
+ Restart=always
+ RestartSec=30
+ SyslogIdentifier=VSSRV
+ 
+ [Install]
+ WantedBy=default.target
